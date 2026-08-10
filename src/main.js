@@ -1,4 +1,6 @@
 import './style.css'
+import project1Img from './images/projects/project1.webp'
+import project2Img from './images/projects/project2.webp'
 
 /**
  * Global Floating Toast Notification System
@@ -579,7 +581,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           ${cat.skills.map(skill => `
             <div class="group bg-[#0a0f1c]/80 backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-6 hover:-translate-y-2 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 relative flex flex-col h-full">
-              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-500/5 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300" aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-linear-to-br from-blue-500/0 to-blue-500/5 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300" aria-hidden="true"></div>
               <div class="flex items-center gap-4 mb-5">
                 <div class="w-14 h-14 sm:w-16 sm:h-16 ${skill.colorBg} rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shrink-0">
                   ${skill.icon}
@@ -592,7 +594,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <span>Proficiency</span><span>${skill.proficiency}%</span>
                 </div>
                 <div class="w-full bg-slate-800 rounded-full h-1.5">
-                  <div class="bg-gradient-to-r from-blue-600 to-blue-400 h-1.5 rounded-full transform origin-left transition-transform duration-1000 ease-out" style="width: ${skill.proficiency}%"></div>
+                  <div class="bg-linear-to-r from-blue-600 to-blue-400 h-1.5 rounded-full transform origin-left transition-transform duration-1000 ease-out" style="width: ${skill.proficiency}%"></div>
                 </div>
               </div>
             </div>
@@ -611,7 +613,7 @@ document.addEventListener('DOMContentLoaded', () => {
       year: '2025',
       role: 'Lead Dev',
       status: 'Completed',
-      image: 'src/images/projects/project2.webp',
+      image: project2Img,
       description: 'An interactive educational platform designed to help users learn about Philippine History in an engaging, accessible, and modern way. Built to preserve and share cultural heritage through digital technology.',
       features: [
         'Interactive Historical Timelines',
@@ -634,7 +636,7 @@ document.addEventListener('DOMContentLoaded', () => {
       year: '2026',
       role: 'Creator & UI Designer',
       status: 'Active',
-      image: 'src/images/projects/project1.webp',
+      image: project1Img,
       description: 'A responsive, minimalist personal portfolio built to showcase my web development skills, projects, and personal aesthetic using modern CSS utilities.',
       features: [
         'Responsive Dark-Mode Aesthetics',
@@ -690,7 +692,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="xl:w-7/12 relative aspect-video xl:aspect-video overflow-hidden bg-slate-900 border-b xl:border-b-0 xl:border-r border-white/10 cursor-pointer" data-open-modal="${featured.id}">
             <img src="${featured.image}" alt="${featured.title}" loading="lazy" decoding="async"
               class="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 ease-out opacity-80" />
-            <div class="absolute inset-0 bg-gradient-to-t xl:bg-gradient-to-r from-[#0a0f1c]/90 via-[#0a0f1c]/40 to-transparent -z-10 pointer-events-none" aria-hidden="true"></div>
+            <div class="absolute inset-0 bg-linear-to-t xl:bg-linear-to-r from-[#0a0f1c]/90 via-[#0a0f1c]/40 to-transparent -z-10 pointer-events-none" aria-hidden="true"></div>
             <div class="absolute inset-0 border-t border-l border-white/5 transform rotate-[15deg] scale-150 z-20 pointer-events-none" aria-hidden="true"></div>
           </div>
 
@@ -748,7 +750,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ${secondary.map(p => `
             <article data-category="${p.category}" data-project-id="${p.id}"
               class="project-card group bg-[#0a0f1c]/60 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:-translate-y-2 hover:border-${p.category === 'iot-automation' ? 'emerald' : 'blue'}-500/30 hover:shadow-lg hover:shadow-${p.category === 'iot-automation' ? 'emerald' : 'blue'}-500/10 transition-all duration-500 flex flex-col relative h-full">
-              <div class="absolute inset-0 bg-gradient-to-b from-blue-500/0 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" aria-hidden="true"></div>
+              <div class="absolute inset-0 bg-linear-to-b from-blue-500/0 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" aria-hidden="true"></div>
 
               <div class="aspect-video bg-slate-900 overflow-hidden relative border-b border-white/10 flex items-center justify-center shrink-0 cursor-pointer" data-open-modal="${p.id}">
                 ${p.image ? `
@@ -860,7 +862,7 @@ document.addEventListener('DOMContentLoaded', () => {
       year: '2025',
       role: 'Lead Developer',
       status: 'Completed',
-      image: 'src/images/projects/project2.webp',
+      image: project2Img,
       description: 'Pamana is an interactive, mobile-first educational web platform crafted to preserve and celebrate Philippine History. Designed with intuitive navigation, engaging historical timelines, and optimized media delivery, it provides students and history enthusiasts with a dynamic learning experience.',
       techStack: ['HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS', 'Vite'],
       features: [
@@ -880,7 +882,7 @@ document.addEventListener('DOMContentLoaded', () => {
       year: '2026',
       role: 'Creator & UI Designer',
       status: 'Active',
-      image: 'src/images/projects/project1.webp',
+      image: project1Img,
       description: 'A modern, state-of-the-art personal developer portfolio designed to showcase projects, technical skills, and academic achievements. Features modern glassmorphism aesthetics, scroll reveal animations, real-time contact validation, and interactive category filtering.',
       techStack: ['HTML5', 'Tailwind CSS v4', 'JavaScript (ES6+)', 'Vite'],
       features: [
@@ -960,7 +962,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <img src="${data.image}" alt="${data.title}" loading="lazy" decoding="async" class="w-full h-full object-cover sm:object-contain" />
           </div>
         ` : `
-          <div class="aspect-video bg-slate-900 rounded-2xl border border-white/10 flex items-center justify-center p-8 text-center bg-gradient-to-br from-emerald-950/30 via-slate-900 to-blue-950/30">
+          <div class="aspect-video bg-slate-900 rounded-2xl border border-white/10 flex items-center justify-center p-8 text-center bg-linear-to-br from-emerald-950/30 via-slate-900 to-blue-950/30">
             <div class="space-y-3">
               <svg class="w-16 h-16 text-emerald-400/60 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
               <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest">Hardware & IoT Circuitry System</p>
